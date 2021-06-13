@@ -39,8 +39,6 @@ app.get('/', (req, res) => {
 
 mongoose.connect(
     process.env.DB_CONNECTION,
-    // untuk terhubung kke mongodb atlas hilangkan komentar dan buat komentar DB_CONNECTION
-    // 'mongodb+srv://root:sixo5HyHJNKbX7dg@apibosjasa.l9ryf.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',
     {
         useNewUrlParser : true,
         useUnifiedTopology : true
