@@ -36,7 +36,7 @@ app.get('/', (req, res) => {
     });
 });
 
-
+// koneksi ke database
 mongoose.connect(
     process.env.DB_CONNECTION,
     {
@@ -48,5 +48,5 @@ mongoose.connect(
 
 const PORT = process.env.PORT || 3000
 app.listen(PORT, () => {
-    console.log(`server is running`);
+    console.log(`server is running on port 3000`);
 });

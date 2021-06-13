@@ -1,7 +1,4 @@
 const mongoose = require('mongoose');
-
-
-
 // Schema Customers
 const CustomerSchema = mongoose.Schema({
     profile: {

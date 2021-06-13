@@ -1,0 +1,126 @@
+<div class="card">
+    <div class="card-body">
+        <h4>Create User</h4>
+        <h5>User - Create New User</h5>
+        <p class="lead">
+            Untuk Menyimpan Data User Ke dalam Database.
+        </p>
+        <div class="input-group mb-3">
+            <span class="input-group-text btn btn-primary" id="basic-addon1">POST</span>
+            <input type="text" class="form-control text-small" placeholder="/api/profile" aria-label="Username" aria-describedby="basic-addon1" disabled readonly>
+        </div>
+        <h5>Parameter</h5>
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Field</th>
+                <th scope="col">Type</th>
+                <th scope="col">Descriptions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>No</td>
+                <td>String</td>
+                <td>No Hp User Pada saat register</td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+</div>
+
+
+<div class="alert alert-warning mt-3" role="alert">
+    <p>
+      Note : "Untuk Menyimpan data cukup mengisi data  <code class="bg-secondary text-white">noTlp</code>  di data json yang di kirimkan di dalam body. secara automatis akan di buatkan schema 
+      database untuk user tersebut dengan catatan format data jason yang di kirim sama dengan data yang ada di bawah"
+    </p>
+   </div>
+  <div class="card">
+    <div class="card-body">
+      <h5>Data json yang di kirim di dalam body sbb:</h5>
+      <pre>
+        <code class="language-json">
+          {
+            "profile" : {
+              "firstName" :String,
+              "lastName" :String
+            },
+            "contact" : {
+              "noTlp" : String,
+              "email" : String,
+              "alamat" : String
+            },
+            "jasa" : [],
+            "profileBusines" : []
+          }
+        </code>
+      </pre>
+    </div>
+  </div>
+<div class="card">
+    <div class="card-body">
+      <h5>Example : </h5>
+      <p>Method : <code>POST</code></p>
+      <p>Url Yang Dikirimkan</p>
+      <pre>
+        <code class="language-html"> 
+            https://apibosjasa.herokuapp.com/api/profile
+        </code>
+      </pre>
+      <h5>Data Json body </h5>
+      <pre>
+        <code class="language-json">
+          <strong>
+            {
+              "profile" : {
+                "firstName" :"",
+                "lastName" :"" 
+              },
+              "contact" : {
+                "noTlp" : "08212872289544", //Cukup Mengisi No Tlp User Saat Register
+                "email" : "",
+                "alamat" : ""
+              },
+              "jasa" : [],
+              "profileBusines" : []
+            }
+          </strong>
+        </code>
+      </pre>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <h5>Response :</h5>
+      <pre>
+        <code class="language-json">
+          {
+            "message": "Data Berhasil Di Submit",
+            "saveprofile": {
+                "profile": {
+                    "username": "guest24591",
+                    "imgName": "user.jpg",
+                    "status": true,
+                    "firstName": "",
+                    "lastName": ""
+                },
+                "cart": {
+                    "order": []
+                },
+                "profileBusines": [],
+                "_id": "60c5bab98fc176269482af96",
+                "contact": {
+                    "noTlp": "08212872289544q",
+                    "email": "",
+                    "alamat": ""
+                },
+                "__v": 0
+            }
+        }
+        </code>
+      </pre>
+    </div>
+  </div>
