@@ -1,0 +1,64 @@
+<div class="card mt-5">
+    <div class="card-body">
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="/">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Documentations</li>
+            </ol>
+          </nav>
+    </div>
+</div>
+<div class="card mt-2">
+    <div class="card-body">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item">Bosjasa Api</li>
+              <li class="breadcrumb-item active" aria-current="page">Documentations</li>
+            </ol>
+        </nav>
+          <h3>Bosjasa Api</h3>
+        <p class="lead">
+            Welcome to BosJasa Api.
+        </p>
+        <hr>
+        <h4>Customers</h4>
+        <h5>Customers - Get All Data Customers</h5>
+        <p class="lead">
+            Untuk Mengambil Seluruh data customers.
+        </p>
+        <div class="input-group mb-3">
+            <span class="input-group-text btn btn-primary" id="basic-addon1">GET</span>
+            <input type="text" class="form-control" placeholder="/api/customers" aria-label="Username" aria-describedby="basic-addon1" disabled readonly>
+        </div>
+        <h5>METHOD : <code>GET</code></h5>
+        <p>Url Yang Dikirimkan</p>
+        <pre>
+          <code class="language-html"> 
+              https://apibosjasa.herokuapp.com/api/customers
+          </code>
+        </pre>
+        <hr>
+        <h4>Users</h4>
+        <h5>User - Get User Find By Id</h5>
+        <p class="lead">
+            Untuk Mengambil data 1 user sesuai id.
+        </p>
+        <div class="input-group mb-3">
+            <span class="input-group-text btn btn-primary" id="basic-addon1">GET</span>
+            <input type="text" class="form-control text-small" placeholder="/api/profile/:id" aria-label="Username" aria-describedby="basic-addon1" disabled readonly>
+        </div>
+        <h5>METHOD : <code>GET</code></h5>
+        <p>Url Yang Dikirimkan</p>
+        <pre>
+          <code class="language-html"> 
+              https://apibosjasa.herokuapp.com/api/profile/:id
+          </code>
+        </pre>
+    </div>
+</div>
+<%- include('method_post') %>
+<%- include('table_update_user') %>
+<%- include('update_user') %>
+<%- include('delete_user') %>
+
+  

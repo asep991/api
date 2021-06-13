@@ -35,6 +35,13 @@ app.get('/', (req, res) => {
         title : 'ApiBosJasa'
     });
 });
+app.get('/docs', (req, res) => {
+    // res.send("apiBosJasa");
+    res.render('docs', {
+        layout : 'layouts/main-layout',
+        title : 'ApiBosJasa'
+    });
+});
 
 // koneksi ke database
 mongoose.connect(
