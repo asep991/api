@@ -1,0 +1,25 @@
+{
+	"profile" : {
+		"username" :"",
+		"firstName" : "",
+		"lastName" : "",
+		"imgName" :  "",
+		"status" : true
+	},
+	"contact" : {
+		"noTlp" : "08212827387",
+		"email" : "Asd@asd.asd",
+		"alamat" : "Subang Jawa Barat Indonesia"
+	},
+	"cart" : [],
+	"profileBusines" : {
+		"namaToko" : "",
+		"alamatToko" : "",
+		"statusToko" : true,
+		"pendapatan" : "",
+		"pemasukan" : "",
+		"saldo" : "",
+		"jasa" : []
+		
+	}
+}
